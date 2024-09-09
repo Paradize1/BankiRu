@@ -1,38 +1,90 @@
+/* Общие стили для приложения */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: #f0f7ff;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Стиль для элементов банка */
+.BankElement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.BankElement img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
+
+.BankElement p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.BankElement .amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Стили для инпута */
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Стили для блока сортировки */
+.SortContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.SortContainer p {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.SortOptions {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 5px;
+  width: 150px;
+  font-size: 16px;
+}
+
+.SortOptions div {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.SortOptions div:hover {
+  background-color: #e8f0ff;
+}
+
